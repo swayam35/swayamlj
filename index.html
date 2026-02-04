@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #1f2933;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #ff9900;
+        }
+
+        .search {
+            flex: 1;
+            margin: 0 30px;
+        }
+
+        .search input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 15px;
+        }
+
+        .nav-items {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #ff9900, #ffb347);
+            padding: 60px 40px;
+            color: #1f2933;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        /* Products */
+        .container {
+            padding: 40px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .price {
+            color: #ff9900;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .card button {
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            background-color: #ff9900;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1f2933;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Chatbot Icon */
+        .chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff9900;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .chatbot:hover {
+            transform: scale(1.1);
+        }
+
+        .chatbot span {
+            position: absolute;
+            right: 70px;
+            background-color: #1f2933;
+            color: white;
+            padding: 6px 10px;
+            border-radius: 5px;
+            font-size: 13px;
+            display: none;
+            white-space: nowrap;
+        }
+
+        .chatbot:hover span {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">E-Shop</div>
+        <div class="search">
+            <input type="text" placeholder="Search for products...">
+        </div>
+        <div class="nav-items">
+            <div>Account</div>
+            <div>Orders</div>
+            <div>Cart 🛒</div>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>Big Deals, Better Prices</h1>
+        <p>Shop smarter with us</p>
+    </div>
+
+    <!-- Products -->
+    <div class="container">
+        <div class="section-title">Featured Products</div>
+
+        <div class="products">
+            <div class="card">
+                <img src="https://via.placeholder.com/300">
+                <h3>Smartphone</h3>
+                <div class="price">₹14,999</div>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300">
+                <h3>Headphones</h3>
+                <div class="price">₹2,499</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot Icon -->
+    <div class="chatbot">
+        🤖
+        <span>Chat with us</span>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        © 2026 E-Shop | All Rights Reserved
+    </div>
+
+</body>
+</html>
